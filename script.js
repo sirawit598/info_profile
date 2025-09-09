@@ -2,7 +2,7 @@
 const typedText = document.querySelector(".typed-text");
 const cursor = document.querySelector(".cursor");
 
-const phrases = ["Line Rangers"];
+const phrases = ["FREEDOM MOD"];
 let i = 0,
   j = 0,
   currentPhrase = [],
@@ -146,3 +146,4 @@ particlesJS("particles-js", {
   },
   retina_detect: true,
 });
+
