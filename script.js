@@ -3,7 +3,11 @@ const typedText = document.querySelector(".typed-text");
 const cursor = document.querySelector(".cursor");
 
 const phrases = ["Line Rangers", "ระบบยิงออโต้", "ยิงรัวแบบโปร", "ไม่โดนแบน"];
-let i = 0, j = 0, currentPhrase = [], isDeleting = false, isEnd = false;
+let i = 0,
+  j = 0,
+  currentPhrase = [],
+  isDeleting = false,
+  isEnd = false;
 
 function loop() {
   isEnd = false;
@@ -42,15 +46,18 @@ function loop() {
 }
 document.addEventListener("DOMContentLoaded", () => loop());
 
-// Scroll effect
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("in-view");
-    }
-  });
-}, { threshold: 0.2 });
+// Scroll animation
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view");
+      }
+    });
+  },
+  { threshold: 0.2 }
+);
 
-document.querySelectorAll('.about').forEach(section => {
+document.querySelectorAll(".about").forEach((section) => {
   observer.observe(section);
 });

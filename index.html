@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Info </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Info</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="profile.png" type="image/png">
+  <link rel="icon" href="profile.png" type="image/png" />
 </head>
+
 <body>
   <div class="video-bg">
-    <video src="background.mp4" autoplay muted loop></video>
+    <video autoplay muted loop playsinline>
+      <source src="background.mp4" type="video/mp4" />
+      <!-- ลองเปลี่ยนเป็น URL นี้ถ้าไฟล์มีปัญหา -->
+      <!-- <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm" /> -->
+    </video>
   </div>
 
   <div class="hero">
     <div class="content">
       <img src="profile.png" alt="โปรไฟล์" class="profile-img" />
-      <h1>บริการ จำหน่ายโปรแกรมช่วยเล่น <br><span class="typed-text"></span><span class="cursor">|</span></h1>
+      <h1>
+        บริการ จำหน่ายโปรแกรมช่วยเล่น <br />
+        <span class="typed-text"></span><span class="cursor">|</span>
+      </h1>
       <p>• LINE Rangers •</p>
       <div class="socials">
         <a href="https://www.youtube.com/@FDGMOD/shorts" target="_blank" class="btn youtube">YouTube</a>
@@ -28,11 +37,12 @@
   <section class="about" id="about">
     <h2>เกี่ยวกับเรา</h2>
     <p>
-      FDG MOD ให้บริการโปรแกรมช่วยเล่นเกม LINE Rangers แบบมืออาชีพ<br>
+      FDG MOD ให้บริการโปรแกรมช่วยเล่นเกม LINE Rangers แบบมืออาชีพ<br />
       พร้อมซัพพอร์ตและอัปเดตระบบตลอดเวลา
     </p>
   </section>
 
   <script src="script.js"></script>
 </body>
+
 </html>
