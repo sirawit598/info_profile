@@ -2,47 +2,62 @@
 <html lang="th">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Info</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="profile.png" type="image/png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Info</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="profile.png" type="image/png" />
 </head>
 
 <body>
-  <div class="video-bg">
-    <video autoplay muted loop playsinline>
-      <source src="background.mp4" type="video/mp4" />
-      <!-- ลองเปลี่ยนเป็น URL นี้ถ้าไฟล์มีปัญหา -->
-      <!-- <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm" /> -->
-    </video>
-  </div>
-
-  <div class="hero">
-    <div class="content">
-      <img src="profile.png" alt="โปรไฟล์" class="profile-img" />
-      <h1>
-        บริการ จำหน่ายโปรแกรมช่วยเล่น <br />
-        <span class="typed-text"></span><span class="cursor">|</span>
-      </h1>
-      <p>• LINE Rangers •</p>
-      <div class="socials">
-        <a href="https://www.youtube.com/@FDGMOD/shorts" target="_blank" class="btn youtube">YouTube</a>
-        <a href="https://discord.com/invite/9X4sqewPAv" target="_blank" class="btn discord">Discord</a>
-        <a href="https://fdgcheat.rexzy.xyz/home" target="_blank" class="btn web">Website</a>
-      </div>
+    <div class="video-bg">
+        <video autoplay muted loop playsinline>
+            <source src="background.mp4" type="video/mp4" />
+        </video>
     </div>
-  </div>
 
-  <section class="about" id="about">
-    <h2>เกี่ยวกับเรา</h2>
-    <p>
-      FDG MOD ให้บริการโปรแกรมช่วยเล่นเกม LINE Rangers แบบมืออาชีพ<br />
-      พร้อมซัพพอร์ตและอัปเดตระบบตลอดเวลา
-    </p>
-  </section>
+    <div class="hero">
+        <div class="content">
+            <img src="profile.png" alt="โปรไฟล์" class="profile-img" />
+            <h1>
+                บริการ จำหน่ายโปรแกรมช่วยเล่น <br />
+                <span class="typed-text"></span><span class="cursor">|</span>
+            </h1>
+            <p>• LINE Rangers •</p>
+            <div class="socials">
+                <a href="https://www.youtube.com/@FDGMOD/shorts" target="_blank" class="btn youtube">YouTube</a>
+                <a href="https://discord.com/invite/9X4sqewPAv" target="_blank" class="btn discord">Discord</a>
+                <a href="https://fdgcheat.rexzy.xyz/home" target="_blank" class="btn web">Website</a>
+            </div>
+        </div>
+    </div>
 
-  <script src="script.js"></script>
+    <section class="about" id="about">
+        <h2>เกี่ยวกับเรา</h2>
+        <p>
+            FDG MOD ให้บริการโปรแกรมช่วยเล่นเกม LINE Rangers แบบมืออาชีพ<br />
+            พร้อมซัพพอร์ตและอัปเดตระบบตลอดเวลา
+        </p>
+    </section>
+
+    <script src="script.js"></script>
+
+    <script>
+        
+        document.addEventListener("contextmenu", e => e.preventDefault());
+
+        
+        document.addEventListener("keydown", e => {
+            if (
+                e.key === "F12" ||
+                (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i") ||
+                (e.ctrlKey && e.key.toLowerCase() === "u")
+            ) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
 </body>
 
 </html>
